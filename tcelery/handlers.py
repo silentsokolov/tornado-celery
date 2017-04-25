@@ -127,7 +127,7 @@ Get task result by task-id
                 response['result'] = result.result
             else:
                 response['traceback'] = result.traceback
-                response['error'] = result.result
+                response['error'] = repr(result.result)
         self.write(response)
 
 
